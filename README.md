@@ -1,4 +1,4 @@
-# StePS - STEreographically Projected cosmological Simulations in the JANUS cosmological model
+# StePS JANUS - STEreographically Projected cosmological Simulations in the JANUS cosmological model
 
 ## An N-body code for non-periodic JANUS cosmological simulations
 
