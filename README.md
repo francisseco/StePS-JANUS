@@ -9,7 +9,10 @@ We present a novel N-body simulation method that compactifies the infinite spati
 The StePS code is optimized to run on GPU accelerated HPC systems.
 
 Janus Simulation run on previous code:
+
+
 [![YouTube](http://i.ytimg.com/vi/t1iGr5U2Hhs/hqdefault.jpg)](https://www.youtube.com/watch?v=t1iGr5U2Hhs)
+
 
 For more information see: [astro-ph](https://arxiv.org/abs/1711.04959) and [astro-ph](https://arxiv.org/abs/1811.05903)
 
