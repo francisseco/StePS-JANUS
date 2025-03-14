@@ -8,7 +8,7 @@ We present a novel N-body simulation method that compactifies the infinite spati
 
 The StePS code is optimized to run on GPU accelerated HPC systems.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t1iGr5U2Hhs?si=cKLODD4VKnagzDGi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![YouTube](http://i.ytimg.com/vi/t1iGr5U2Hhs/hqdefault.jpg)](https://www.youtube.com/watch?v=t1iGr5U2Hhs)
 
 For more information see: [astro-ph](https://arxiv.org/abs/1711.04959) and [astro-ph](https://arxiv.org/abs/1811.05903)
 
