@@ -201,7 +201,7 @@ if Params['BIN_MODE'] == 1:
             #setting the radii of the shells with a small random displacement in the shell
             displacement = np.cbrt(np.random.rand()*((r_j_limit_shell+D)**3 - r_j_limit_shell**3)+r_j_limit_shell**3)-r_j_limit_shell
             particle_data[(j*Params['NSHELL']+i),0:3] = (r_j_limit_shell+displacement)*spherical_glass[i,0:3]
-################JANUS
+################JANUS change the value of negative mass and the amount of them here
             if (i % 64) == 0:
             	particle_data[(j*Params['NSHELL']+i),6] = -64*Mass[j]
             else:
