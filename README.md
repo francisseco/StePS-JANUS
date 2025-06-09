@@ -1,6 +1,8 @@
 # StePS JANUS - STEreographically Projected cosmological Simulations in the JANUS cosmological model
 
-Note that I just created this fork and haven't uploaded the Janus modified code YET as I have first to perform the required changes on the latest version of master STePS code and tools prior.
+Note that this code is a work in progress as to how one can fully integrate the Janus model with the tools provided by the Master StePS repository as most available code for running such simulations does not take into account negative masses as well as visualization and analisys tools.For example most sph tools just won't be able to deal with negative masses.
+
+Some tools made available here will allow to extract negative masses points and data in order to separately make density, speed etc... analisys.
 
 ## An N-body code for non-periodic JANUS cosmological simulations
 
@@ -8,7 +10,7 @@ We present a novel N-body simulation method that compactifies the infinite spati
 
 The StePS code is optimized to run on GPU accelerated HPC systems.
 
-Janus Simulation run on previous code:
+Janus Simulation:
 
 
 [![YouTube](http://i.ytimg.com/vi/t1iGr5U2Hhs/hqdefault.jpg)](https://www.youtube.com/watch?v=t1iGr5U2Hhs)
