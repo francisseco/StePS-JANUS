@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #*******************************************************************************#
-#  ascii2hdf5_snapshot.py - An ASCII to hdf5 file converter for StePS           #
+#  ascii2hdf5_snapshot_janus.py - An ASCII to hdf5 file converter for StePS           #
 #     (STEreographically Projected cosmological Simulations) snapshots.         #
 #    Copyright (C) 2017-2022 Gabor Racz                                         #
 #                                                                               #
@@ -16,6 +16,8 @@
 #    GNU General Public License for more details.                               #
 #*******************************************************************************#
 
+
+#this script creates an hdf5 file in which positive masses and negative masses are in seperate datasets within a single hdf5 file.
 import numpy as np
 import h5py
 import sys
