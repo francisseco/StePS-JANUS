@@ -1,0 +1,68 @@
+
+
+shopt -s nullglob
+
+
+
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/moulinetteH2A
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/snapshotfinal
+
+
+cd /home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/snapshots
+
+for f in *; do
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/hdf52ascii_snapshot.py "$f" "/home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/moulinetteH2A/$f.txt"
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/ascii2hdf5_snapshot_janus.py "/home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/moulinetteH2A/$f.txt" "/home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/snapshotfinal/$f" 0
+rm "/home/frid/Sims/Janus/test_baseline/results/N16P1ratio64R50/moulinetteH2A/$f.txt"
+
+done
+
+
+
+
+
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/moulinetteH2A
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/snapshotfinal
+
+
+cd /home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/snapshots
+
+for f in *; do
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/hdf52ascii_snapshot.py "$f" "/home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/moulinetteH2A/$f.txt"
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/ascii2hdf5_snapshot_janus.py "/home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/moulinetteH2A/$f.txt" "/home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/snapshotfinal/$f" 0
+rm "/home/frid/Sims/Janus/test_baseline/results/N32P1-ratio64-RS50-DS25-RCRIT15/moulinetteH2A/$f.txt"
+
+done
+
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/moulinetteH2A
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/snapshotfinal
+
+
+cd /home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/snapshots
+
+for f in *; do
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/hdf52ascii_snapshot.py "$f" "/home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/moulinetteH2A/$f.txt"
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/ascii2hdf5_snapshot_janus.py "/home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/moulinetteH2A/$f.txt" "/home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/snapshotfinal/$f" 0
+rm "/home/frid/Sims/Janus/test_baseline/results/P1-RS50-DS25-RCRIT15/moulinetteH2A/$f.txt"
+
+done
+
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/moulinetteH2A
+mkdir -p /home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/snapshotfinal
+
+
+cd /home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/snapshots
+
+for f in *; do
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/hdf52ascii_snapshot.py "$f" "/home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/moulinetteH2A/$f.txt"
+  /home/frid/Sims/StePS/tools/ASCII_HDF5_conversion_for_StePS/ascii2hdf5_snapshot_janus.py "/home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/moulinetteH2A/$f.txt" "/home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/snapshotfinal/$f" 0
+rm "/home/frid/Sims/Janus/test_baseline/results/N64P1-ratio64P1N-RSIM50DS25/moulinetteH2A/$f.txt"
+
+done
+
+
+
+shopt -u nullglob
+
+
+
