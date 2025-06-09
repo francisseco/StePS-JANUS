@@ -5,9 +5,9 @@
   ____) | ||  __/ |     ____) |
  |_____/ \__\___|_|    |_____/
 
-StePS - STEreographically Projected cosmological Simulations
+StePS - STEreographically Projected cosmological Simulations for Janus
 
-v0.3.7.3
+v1
 Copyright (C) 2017-2019 Gábor Rácz
 	Department of Physics of Complex Systems, Eotvos Lorand University | Budapest, Hungary
 	Department of Physics & Astronomy, Johns Hopkins University | Baltimore, MD, USA
@@ -41,7 +41,7 @@ Cosmological simulation code for compactified cosmological simulations.
 Downloading the code:
 	Under Linux, the source files of the StePS code can be downloaded with the 
 
-	$ git clone https://github.com/eltevo/StePS
+	$ git clone https://github.com/francisseco/StePS-JANUS/
 
 	command.
 
