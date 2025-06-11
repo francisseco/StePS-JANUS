@@ -5,7 +5,7 @@
   ____) | ||  __/ |     ____) |
  |_____/ \__\___|_|    |_____/
 
-StePS - STEreographically Projected cosmological Simulations for Janus
+StePS - STEreographically Projected cosmological Simulations for Janus - This code is under development! Friedman solver still needs to be modified to be adapted for Janus model.
 
 v1
 Copyright (C) 2017-2019 Gábor Rácz
@@ -23,7 +23,7 @@ ragraat@caesar.elte.hu
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
-This code is under development!
+
 
 Cosmological simulation code for compactified cosmological simulations.
 - written in C++
