@@ -376,7 +376,7 @@ int main(int argc, char *argv[])
 		{
 			for(i=0;i<N;i++)
 			{
-				if (M[i] < 0 )//JANUS Init Acc if neg mass, scale the velocity up
+				if (M[i] < 0 )//JANUS Init Acc if neg mass, scale the velocity up can be done here
 				{
 				v[3*i] = v[3*i]/sqrt(a_start)/UNIT_V;
 				v[3*i+1] =v[3*i+1]/sqrt(a_start)/UNIT_V;
@@ -394,10 +394,18 @@ int main(int argc, char *argv[])
 		{
 			for(i=0;i<N;i++)
 			{
-				v[3*i] = v[3*i]/UNIT_V;
-				v[3*i+1] = v[3*i+1]/UNIT_V;
-				v[3*i+2] = v[3*i+2]/UNIT_V;
-			}
+				if (M[i] < 0 )//JANUS Init Acc if neg mass, scale the velocity up can be done here
+				{
+				v[3*i] = v[3*i]/sqrt(a_start)/UNIT_V;
+				v[3*i+1] =v[3*i+1]/sqrt(a_start)/UNIT_V;
+				v[3*i+2] =v[3*i+2]/sqrt(a_start)/UNIT_V;
+				}
+				else
+				{
+				v[3*i] = v[3*i]/sqrt(a_start)/UNIT_V;
+				v[3*i+1] = v[3*i+1]/sqrt(a_start)/UNIT_V;
+				v[3*i+2] = v[3*i+2]/sqrt(a_start)/UNIT_V;
+				}
 		}
 		if(numtasks > 1)
 		{
@@ -686,7 +694,7 @@ int main(int argc, char *argv[])
 	//Timing
 	if(rank == 0)
 		printf("Initial force calculation...\n");
-					printf("debug Rank %i \n", JanusAcc);
+					printf("debug Rank %i \n", JanusAcc); //JANUS debug output, just in case
 	//Initial force calculation
 	if(rank==0)
 	{
@@ -775,7 +783,7 @@ int main(int argc, char *argv[])
 	REAL T_prev,Hubble_param_prev;
 	T_prev = T;
 	Hubble_param_prev = Hubble_param;
-	//Main loop
+	//Main loop JANUS edited
 	for(t=0; a_tmp<a_max; t++)
 	{
 		if(rank == 0)
